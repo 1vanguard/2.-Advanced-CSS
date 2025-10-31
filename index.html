@@ -14,9 +14,17 @@
             <div class="app container">
                 <input type="checkbox" id="offcanvas-checkbox" />
                 <label for="offcanvas-checkbox" id="offcanvas-overlay"></label>
-                <label for="offcanvas-checkbox" class="d-xl-none offcanvas-toggle" id="app-main-offcanvas-toggle">☰</label>
+                <label for="offcanvas-checkbox" class="d-xl-none offcanvas-toggle" id="app-main-offcanvas-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                </label>
                 <header class="app-header app-offcanvas align-items-center d-flex" role="dialog" aria-modal="true" aria-label="Main navigation">
-                    <label for="offcanvas-checkbox" class="d-xl-none offcanvas-toggle">X</label>
+                    <label for="offcanvas-checkbox" class="d-xl-none offcanvas-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                        </svg>
+                    </label>
                     <a href="/" class="d-flex flex-column app-logo-box">
                         <div class="app-logo-wrap">
                             <img alt="webDev" src="/images/logos/logo_webDev.png" />
@@ -109,45 +117,52 @@
                         <section class="app-block block-gray">
                             <h3>Some section content</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse distinctio debitis molestiae, quas necessitatibus facere magnam voluptates nulla fugiat, odio sequi dolores earum alias non mollitia eum eligendi accusamus?</p>
-                            <table>
-                                <caption>
-                                    This is caption!
-                                </caption>
-                                <thead>
-                                    <tr class="text-center">
-                                        <th>head 1</th>
-                                        <th>head 2</th>
-                                        <th>head 3</th>
-                                    </tr>
-                                </thead>
-                                <tfoot>
-                                    <tr>
-                                        <td>foot 1</td>
-                                        <td colspan="2" class="text-center">foot 2 &amp; 3</td>
-                                    </tr>
-                                </tfoot>
-                                <tbody>
-                                    <tr>
-                                        <td>body 1</td>
-                                        <td>body 2</td>
-                                        <td>body 3</td>
-                                    </tr>
-                                    <tr>
-                                        <td rowspan="2">body 3 & 6</td>
-                                        <td>body 4</td>
-                                        <td>body 5</td>
-                                    </tr>
-                                    <tr>
-                                        <td>body 7</td>
-                                        <td>body 8</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="table-responsive">
+                                <table>
+                                    <caption>
+                                        This is caption!
+                                    </caption>
+                                    <thead>
+                                        <tr class="text-center">
+                                            <th>head 1</th>
+                                            <th>head 2</th>
+                                            <th>head 3</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <td>foot 1</td>
+                                            <td colspan="2" class="text-center">foot 2 &amp; 3</td>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td>body 1</td>
+                                            <td>body 2</td>
+                                            <td>body 3</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2">body 3 & 6</td>
+                                            <td>body 4</td>
+                                            <td>body 5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>body 7</td>
+                                            <td>body 8</td>
+                                        </tr>
+                                        <tr>
+                                            <td>body 9</td>
+                                            <td>body 10<br />Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quae illo consequuntur ad temporibus sed totam laboriosam assumenda error! Ut velit iure similique id minus, nobis tempore voluptatum harum in?</td>
+                                            <td>body 11</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </section>
                     </div>
                 </div>
                 <footer class="app-footer">
-                    <div class="app-block align-items-center d-flex justify-content-between">
+                    <div class="app-block align-items-center d-flex flex-wrap justify-content-between">
                         <a href="/" class="align-items-center d-flex app-logo-box">
                             <div class="app-logo-wrap">
                                 <img alt="webDev" src="/images/logos/logo_webDev.png" />
@@ -179,7 +194,7 @@
                                 </div>
                             </div>
                         </a>
-                        <span>2025</span>
+                        <span class="d-block ms-1">2025</span>
                     </div>
                 </footer>
             </div>
